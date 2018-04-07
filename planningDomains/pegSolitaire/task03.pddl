@@ -26,9 +26,9 @@
 ;; "Problems in Puzzle-Peg" included in the game Puzzle-Peg (Third
 ;; Edition, 1924, Lubbers & Bell Mfg. Co.,Clinton, Iowa, USA).
 ;; 
-;; Original problem number and name: "51 SC"
+;; Original problem number and name: "61 Stump"
 ;; 
-;; Number of pegs:                  15
+;; Number of pegs:                  11
 ;; Number of diagonal moves needed: 0
 ;; 
 ;; Problem description:
@@ -36,16 +36,16 @@
 ;; "o" denotes "free"
 ;; 
 ;;     o o o     
-;;     * * o     
-;; * * * o o * o 
-;; o o * o * * * 
-;; * * o * * o o 
 ;;     o * o     
-;;     o o o     
+;; o o * o o * o 
+;; o o o o o * * 
+;; o o * o o * o 
+;;     * o *     
+;;     * * o     
 ;; 
 ;; Target position = (3,3)
 ;; 
-(define (problem PEGSOLITAIRE-3)
+(define (problem PEGSOLITAIRE-11)
   (:domain PEGSOLITAIRE)
   (:objects
                     pos_0_2 pos_0_3 pos_0_4
@@ -137,36 +137,36 @@
     (free pos_0_2)
     (free pos_0_3)
     (free pos_0_4)
+    (free pos_1_2)
     (free pos_1_4)
+    (free pos_2_0)
+    (free pos_2_1)
     (free pos_2_3)
     (free pos_2_4)
     (free pos_2_6)
     (free pos_3_0)
     (free pos_3_1)
+    (free pos_3_2)
     (free pos_3_3)
-    (free pos_4_2)
-    (free pos_4_5)
+    (free pos_3_4)
+    (free pos_4_0)
+    (free pos_4_1)
+    (free pos_4_3)
+    (free pos_4_4)
     (free pos_4_6)
-    (free pos_5_2)
-    (free pos_5_4)
-    (free pos_6_2)
-    (free pos_6_3)
+    (free pos_5_3)
     (free pos_6_4)
-    (occupied pos_1_2)
     (occupied pos_1_3)
-    (occupied pos_2_0)
-    (occupied pos_2_1)
     (occupied pos_2_2)
     (occupied pos_2_5)
-    (occupied pos_3_2)
-    (occupied pos_3_4)
     (occupied pos_3_5)
     (occupied pos_3_6)
-    (occupied pos_4_0)
-    (occupied pos_4_1)
-    (occupied pos_4_3)
-    (occupied pos_4_4)
-    (occupied pos_5_3)
+    (occupied pos_4_2)
+    (occupied pos_4_5)
+    (occupied pos_5_2)
+    (occupied pos_5_4)
+    (occupied pos_6_2)
+    (occupied pos_6_3)
   )
   (:goal (and
            (free pos_0_2)
