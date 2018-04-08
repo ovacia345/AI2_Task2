@@ -45,7 +45,7 @@
 ;; 
 ;; Target position = (3,3)
 ;; 
-(define (problem PEGSOLITAIRE-4)
+(define (problem PEGSOLITAIRE-17)
   (:domain PEGSOLITAIRE)
   (:objects
                     pos_0_2 pos_0_3 pos_0_4
