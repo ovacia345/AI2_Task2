@@ -1,2 +1,2 @@
 # AI2_Task2
-Towers of Hanoi problem using pyperplan
+The pyperplan planner with the Towers of Hanoi and peg solitaire problem domains together with five problems for each problem domain.
